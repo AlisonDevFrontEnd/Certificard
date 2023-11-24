@@ -1,0 +1,86 @@
+body {
+  background: linear-gradient(to left, #111, #00ff73);
+}
+.container {
+  padding: 64px;
+  margin: 64px;
+  background: #111;
+  color: #00ff73;
+  border-radius: 5px 10px 20px 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+.perfil-foto {
+  max-height: 160px;
+  border-radius: 20px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border: 2px solid #00ff73;
+}
+.titulo {
+  margin-left: 16px;
+}
+.titulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  padding: 32px;
+  background: linear-gradient(230.65deg, #111, #333, #666);
+}
+
+.projetos-titulo {
+  list-style: none;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.projetos-item {
+  list-style-type: none;
+  line-height: 48px;
+}
+.projetos-item a {
+  text-decoration: none;
+  color: #00ff73;
+}
+
+.display {
+  display: inline-block;
+}
+.dev {
+  overflow: hidden; /* garante que o texto esteja inicialmente escondido */
+  border-right: 0.15em solid orange; /* cursor piscando verticalmente */
+  white-space: nowrap; /* Evita que o texto seja quebrado */
+  margin: 0 auto; /* Centraliza o texto */
+  letter-spacing: 0.15em; /* Ajusta espaço entre caracteres */
+  animation: typing 3.5s steps(12, end), blink-caret 0.75s step-end infinite; /* configuração da animação */
+}
+
+/* Animação Keyframe para o efeito máquina de escrever*/
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Animação Keyframe para o cursor piscar */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
